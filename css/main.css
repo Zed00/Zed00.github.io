@@ -1,0 +1,269 @@
+body{
+	font-family: 'Lato', sans-serif;
+	color: #747784;
+	font-weight: 300;
+	max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.text-thin{
+	font-weight: 100;
+}
+
+.bg-1{
+/*	font-size: 300%;*/
+	background-color: rgb(180,200,150);
+	border: 10px;
+	/*border-bottom-color: rgb(180,200,150);*/
+
+}
+
+.photo{
+	width: 40%;
+	max-width: 320px;
+	min-width: 240px;
+}
+
+.brief_intro{
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 500px;
+}
+
+.image{
+	width: 90%;
+	height: auto;
+	border-radius: 4%;
+}
+.img-logo{
+	display: block;
+	width: 90%;
+	max-width: 162px;
+	min-width: 70px;
+	border-radius: 100%;
+	padding: 1em;
+}
+
+.intro{
+	font-size: 200%;
+	background-color: rgba(240,200,150,0.5);
+	padding: 1%;
+
+}
+
+h3{
+	overflow: auto;
+	text-indent: 9%;
+	line-height: 140%;
+	font-size: 160%;
+	vertical-align: middle;
+}
+
+.container{
+	width: 100%;
+}
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+/*  min-height: 120px;*/
+  display: flex;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.art{
+  margin-top: 1%;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.art_head{
+	width: 100%;
+}
+.art_picture{
+	width: 50%;
+}
+
+.art_intro{
+	text-indent: 42px;
+	width: 40%;
+	font-size: 150%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+}
+
+.picture{
+  float: left;
+  width: 100%;
+  position: relative;
+  background-image: url("maitian.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+article{
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 25%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  font-size: 180%;
+}
+
+.header_logo{
+	width: 25%;
+}
+
+.header_intro{
+	width: 75%;
+	margin-top: 7%;
+	margin-right: 2%;
+
+}
+
+nav{
+	box-sizing: border-box;
+}
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+  font-size: 150%;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+.header__menu {
+  display: none;
+
+}
+
+@media screen and (max-width: 686px) {
+  .image-logo {
+    height: auto;
+    margin-right: 0.5em;
+  }
+  .header_logo{
+  	width: 25%;
+  }
+  .header_intro{
+  	width: 50%;
+  }
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 250px;
+    margin-top: 20px;
+    position: absolute;
+     This trasform moves the drawer off canvas. 
+    -webkit-transform: translate(-250px, 0);
+    transform: translate(-250px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .header__menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+  }
+  h4{
+  	display: none;
+  }
+  .art_picture{
+  	width: 100%;
+  }
+  .art_intro{
+  	width: 100%;
+  }
+  
+  .col-md-12{
+    width: 100%;
+  }
+  .photo{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .art_picture{
+  	margin-top: 5%;
+  	order:1;
+  	width: 100%;
+  	max-width: 605px;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  .art_intro{
+  	order:2;
+  	width: 100%;
+  }
+  .brief_intro{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 300px;
+  }
+  .col-md-12{
+    width: 100%;
+  }
+  .photo{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+

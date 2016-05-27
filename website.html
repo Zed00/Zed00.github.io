@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="file:///C:/Users/Administrator/Desktop/Python/2016.5/zai_hui/templates/css/styles.css"> -->
+	<!-- <link rel="stylesheet" media="screen and (min-width:500px)" href="css/over500.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/slider.css"> -->
+	<meta name="viewport" content="width=device-width,initial=scale=1">
+	<meta charset = "utf-8" />
+	<title>zai hui</title>
+	<style>
+		@import url(http://weloveiconfonts.com/api/?family=entypo|zocial);
+		/* zocial */
+		[class*="zocial-"]:before {
+			display: inline-block;
+			font-family: 'zocial', sans-serif;
+			margin-right: 10px;
+		/* entypo */
+		[class*="entypo-"]:before {
+			font-family: 'entypo', sans-serif;
+		}
+		}
+		span{
+			font-size: 2vw;
+			margin: 1vm;
+			padding-left: 8%;
+		}
+	</style>
+</head>
+<body>
+	<div class = "container">
+
+		<div class = "header">
+			<div class = "header_logo">
+				<img class="img-logo" src="img/logo.jpg">
+			</div>
+			<div class = "header_intro text-right text-uppercase">
+				<h1>zai hui</h1>
+				<h4>科技宅/记忆爱好者/外星文明探索</h4>
+				<!-- <hr style="height:1px;border:none;border-top:1px solid #555555;" /> -->
+			</div>
+	        <a id="menu" class="header__menu">
+	        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          		  	<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                </svg>
+       		</a>
+		</div>
+ 	    <nav id="drawer" class="nav">
+ 	    	<ul class="nav__list">
+    			<li class="nav__item"><a href="#">微博</a></li>
+     		    <li class="nav__item"><a href="#">知乎</a></li>
+     	 	    <li class="nav__item"><a href="#">专栏</a></li>
+     	  		<li class="nav__item"><a href="#">头条</a></li>
+    		</ul>
+ 	    </nav>
+		<div class = "art">
+			<div class ="col-md-12">
+				<h2>Introduction</h2>
+			</div>
+			<div class = "photo">
+				<img class = "image" src="img/zaihui.jpg">
+			</div>
+			<div class = "brief_intro">
+				<li class = "intro">Jiahui Chen</li>
+				<li class = "intro">GDUFS</li>
+				<li class = "intro">12-712</li>
+				<li class = "intro">UFO</li>
+				<li class = "intro">Wechat Num</li>
+			</div>
+		</div>
+		<div class="art">
+			<!-- <div class = "col-md-1"><img class = "img-responsive" src="http://lorempixel.com/80/330" /></div> -->
+			<div class ="col-md-12">
+				<h2>Article</h2>
+			</div>
+			<div class = "art_picture">
+				<div class="picture textarea">
+					<article class="textarea">麦田里的家辉</article>
+				</div>
+			</div>
+			<div class ="art_intro">
+				<p>有一种说法称“麦田圈其实是投射在三维世界里的四维物体”，我们人类目前的维度知觉还无法达到理解四维事物的阶段，所以我们对麦田圈会觉得如此神秘莫测。你同意这个观点吗？维度知觉的演化，在通过绘画艺术描述周遭世界的方式中就能找到。从穴居远祖以直线描绘动物，到中世纪透视有误的二维绘画，再到文艺复兴之后写实的空间描绘，都能体现知觉的演变。
+				</p>
+			</div>
+		</div>
+		<div class="art">
+			<span class="zocial-twitter">twitter</span>
+			<span class="zocial-flickr">flickrflickr</span>
+			<span class="zocial-lastfm">lastfm</span>
+			<span class="zocial-reddit">reddit</span>
+		</div>
+      
+		</div>
+
+		<script>
+        	/*
+      		 * Open the drawer when the menu ison is clicked.
+      		 */
+    	    var menu = document.querySelector('#menu');
+       	 	var main = document.querySelector('main');
+    	    var drawer = document.querySelector('.nav');
+
+    	    menu.addEventListener('click', function(e) {
+    	    	drawer.classList.toggle('open');
+    	    	e.stopPropagation();
+    	    });
+   	  	    main.addEventListener('click', function() {
+   	  	        drawer.classList.remove('open');
+            });
+
+   		</script>
+		
+</body>
+</html>
+<!-- <div class="wrap">
+<div id="main">
+
+
+
+<div class="slider_container">
+<div class="slider_box">
+<div id="slider1_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1920px; height: 500px; overflow: hidden;">
+
+<div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1920px; height: 500px; overflow: hidden;">
+
+ 
+<div>
+<a href="http://www.zealer.com/post/313.html" target="_blank">
+<img src="http://img.zealer.com/1920/500/dc98d003f9bb69cabeb02eaf2506340eee4.jpg" />
+</a>
+</div>
+ 
+<div>
+<a href="http://plus.zealer.com/post/61426.html" target="_blank">
+<img src="http://img.zealer.com/1920/500/a59710051e8514b7818830764ac8b18554b.jpg" />
+</a>
+</div>
+ 
+<div>
+<a href="http://www.zealer.com/post/311.html" target="_blank">
+<img src="http://img.zealer.com/1920/500/4b90a0039612c0a00f126c402fa5c94b951.jpg" />
+</a>
+</div>
+ 
+<div>
+<a href="http://plus.zealer.com/post/61316.html" target="_blank">
+<img src="http://img.zealer.com/1920/500/2e97300bf7f8cb0af1f878b67203e105cee.jpg" />
+</a>
+</div>
+ 
+<div>
+<a href="http://plus.zealer.com/post/61220.html" target="_blank">
+<img src="http://img.zealer.com/1920/500/8895e004c98e4db86c04f32c2d3fd6e5aa8.jpg" />
+</a>
+</div>
+ 
+<div>
+<a href="http://plus.zealer.com/post/61161.html" target="_blank">
+<img src="http://img.zealer.com/1920/500/8a9fb00cd58fd85c24d8d88a222dd16c083.jpg" />
+</a>
+</div>
+</div>
+
+
+<div data-u="navigator" class="jssorb21">
+
+<div data-u="prototype" class=""><div style="font-size:13px;" u="numbertemplate"></div></div>
+</div>
+
+
+<div class="arrow_box">
+<span data-u="arrowleft" class="jssora2l jssora2l"></span>
+
+<span data-u="arrowright" class="jssora2r jssora2r"></span>
+</div>
+
+</div>
+
+</div>
+</div> -->
+
+
+<!-- <script src="http://static.zealer.com/js/jquery-1.10.2.min.js"></script>
+
+<script src="http://static.zealer.com/js/jssor.slider.min.js"></script><script src="http://static.zealer.com/page/js/libs_70e81.js"></script>
+<script src="http://static.zealer.com/page/js/page_d849f95fc5.js"></script>
+
+<script>
+$(function(){
+
+ Z.use('newWww/banner');Z.use('videoList/videoList');Z.use('plusList/plusList');Z.use('index/phoneList');Z.use('labList/labList');Z.use('index/page');Z.use('global/header');Z.use('footer/footer');
+});
+</script>
+ -->
+<!-- </body>
+</html>
+ -->
+
